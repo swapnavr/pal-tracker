@@ -83,7 +83,7 @@ public class InMemoryTimeEntryRepositoryTest {
         InMemoryTimeEntryRepository repo = new InMemoryTimeEntryRepository();
 
         TimeEntry updatedEntry = repo.update(
-                100L,
+                1L,
                 new TimeEntry(321L, 654L, LocalDate.parse("2017-01-09"), 5));
 
         assertThat(updatedEntry).isNull();
