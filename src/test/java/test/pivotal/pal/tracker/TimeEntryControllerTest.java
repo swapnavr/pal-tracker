@@ -65,7 +65,7 @@ public class TimeEntryControllerTest {
 
     @Test
     public void testRead_NotFound() {
-        long nonExistentTimeEntryId = 1L;
+        long nonExistentTimeEntryId = 300L;
         doReturn(null)
             .when(timeEntryRepository)
             .find(nonExistentTimeEntryId);
